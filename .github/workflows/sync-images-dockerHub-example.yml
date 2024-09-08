@@ -35,5 +35,5 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         #!/usr/bin/env bash
-        skopeo copy --all docker://docker.io/lmenezes/cerebro:0.9.4 docker://registry.cn-zhangjiakou.aliyuncs.com/lxiangxiang/cerebro:0.9.4
+        skopeo copy --all docker://docker.io/yangchuansheng/ip_derper docker://registry.cn-zhangjiakou.aliyuncs.com/liuxiangxiang/ip_derper
 
