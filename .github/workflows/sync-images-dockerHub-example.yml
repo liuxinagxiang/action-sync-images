@@ -35,7 +35,7 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         #!/usr/bin/env bash
-        skopeo copy --all docker://docker.io/calico/cni:master docker://registry.cn-zhangjiakou.aliyuncs.com/lxiangxiang/calico/cni:master
-        skopeo copy --all docker://docker.io/calico/node:master docker://registry.cn-zhangjiakou.aliyuncs.com/lxiangxiang/calico/node:master
-        skopeo copy --all docker://docker.io/calico/kube-controllers:master docker://registry.cn-zhangjiakou.aliyuncs.com/lxiangxiang/calico/kube-controllers:master
+        skopeo copy --all docker://docker.io/calico/cni:master docker://registry.cn-zhangjiakou.aliyuncs.com/lxiangxiang/cni:master
+        skopeo copy --all docker://docker.io/calico/node:master docker://registry.cn-zhangjiakou.aliyuncs.com/lxiangxiang/node:master
+        skopeo copy --all docker://docker.io/calico/kube-controllers:master docker://registry.cn-zhangjiakou.aliyuncs.com/lxiangxiang/kube-controllers:master
 
