@@ -36,7 +36,7 @@ jobs:
       run: |
         #!/usr/bin/env bash
         #skopeo copy --all docker://registry.k8s.io/metrics-server/metrics-server:v0.7.1 docker://registry.cn-zhangjiakou.aliyuncs.com/lxiangxiang/metrics-server:v0.7.1
-        skopeo copy --all docker://docker.io/nginx/nginx:1.26.0 docker://registry.cn-zhangjiakou.aliyuncs.com/lxiangxiang/nginx:1.26.0
+        skopeo copy --all docker://docker.io/nginx:1.26.0 docker://registry.cn-zhangjiakou.aliyuncs.com/lxiangxiang/nginx:1.26.0
         #skopeo copy --all docker://docker.io/calico/node:v3.25.0 docker://registry.cn-zhangjiakou.aliyuncs.com/lxiangxiang/node:v3.25.0
         #skopeo copy --all docker://docker.io/calico/kube-controllers:v3.25.0 docker://registry.cn-zhangjiakou.aliyuncs.com/lxiangxiang/kube-controllers:v3.25.0
 
