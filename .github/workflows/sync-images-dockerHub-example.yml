@@ -35,5 +35,6 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         #!/usr/bin/env bash
-        skopeo copy  docker://docker.io/library/nginx:1.26.0  docker://registry.cn-zhangjiakou.aliyuncs.com/lxiangxiang/nginx:1.26.0
-
+        skopeo copy  docker://docker.io/grafana/promtail:2.9.3  docker://registry.cn-zhangjiakou.aliyuncs.com/lxiangxiang/promtail:2.9.3
+        skopeo copy  docker://docker.io/grafana/loki:2.6.1  docker://registry.cn-zhangjiakou.aliyuncs.com/lxiangxiang/loki:2.6.1
+        skopeo copy  docker://docker.io/bats/bats:1.8.2  docker://registry.cn-zhangjiakou.aliyuncs.com/lxiangxiang/bats:1.8.2
