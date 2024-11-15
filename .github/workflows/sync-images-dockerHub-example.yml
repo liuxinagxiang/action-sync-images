@@ -37,7 +37,7 @@ jobs:
         #!/usr/bin/env bash
         skopeo copy  docker://docker.io/grafana/grafana:11.3.0  docker://registry.cn-zhangjiakou.aliyuncs.com/lxiangxiang/grafana:11.3.0
         skopeo copy  docker://quay.io/kiwigrid/k8s-sidecar:1.28.0  docker://registry.cn-zhangjiakou.aliyuncs.com/lxiangxiang/k8s-sidecar:1.28.0
-        skopeo copy  docker://quay.io/quay.io/prometheus/alertmanager:v0.27.0 docker://registry.cn-zhangjiakou.aliyuncs.com/lxiangxiang/alertmanager:v0.27.0
+        skopeo copy  docker://quay.io/prometheus/alertmanager:v0.27.0 docker://registry.cn-zhangjiakou.aliyuncs.com/lxiangxiang/alertmanager:v0.27.0
         skopeo copy  docker://quay.io/prometheus/node-exporter:v1.8.2  docker://registry.cn-zhangjiakou.aliyuncs.com/lxiangxiang/node-exporter:v1.8.2
         skopeo copy  docker://quay.io/prometheus-operator/prometheus-config-reloader:v0.78.1  docker://registry.cn-zhangjiakou.aliyuncs.com/lxiangxiang/prometheus-config-reloader:v0.78.1
         skopeo copy  docker://quay.io/prometheus-operator/prometheus-operator:v0.78.1  docker://registry.cn-zhangjiakou.aliyuncs.com/lxiangxiang/prometheus-operator:v0.78.1
