@@ -39,6 +39,7 @@ jobs:
         skopeo copy --all docker://quay.io/jetstack/cert-manager-controller:v1.3.1 docker://registry.cn-zhangjiakou.aliyuncs.com/lxiangxiang/cert-manager-controller:v1.3.1
         skopeo copy --all docker://quay.io/jetstack/cert-manager-webhook:v1.3.1 docker://registry.cn-zhangjiakou.aliyuncs.com/lxiangxiang/cert-manager-webhook:v1.3.1
         skopeo copy --all docker://docker.io/apache/skywalking-java-agent:9.3.0-java17 docker://registry.cn-zhangjiakou.aliyuncs.com/lxiangxiang/skywalking-java-agent:9.3.0-java17
+        skopeo copy --all docker://docker.io/apache/skywalking-java-agent:9.3.0-alpine docker://registry.cn-zhangjiakou.aliyuncs.com/lxiangxiang/skywalking-java-agent:9.3.0-alpine
         skopeo copy --all docker://docker.io/apache/skywalking-oap-server:10.1.0 docker://registry.cn-zhangjiakou.aliyuncs.com/lxiangxiang/skywalking-oap-server:10.1.0
         skopeo copy --all docker://docker.io/apache/skywalking-ui:10.1.0 docker://registry.cn-zhangjiakou.aliyuncs.com/lxiangxiang/skywalking-ui:10.1.0
         skopeo copy --all docker://docker.io/apache/skywalking-banyandb:0.7.1 docker://registry.cn-zhangjiakou.aliyuncs.com/lxiangxiang/skywalking-banyandb:0.7.1
