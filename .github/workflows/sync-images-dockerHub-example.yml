@@ -35,4 +35,12 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         #!/usr/bin/env bash
-        skopeo copy  docker://quay.io/prometheus-operator/prometheus-operator:v0.78.1  docker://registry.cn-zhangjiakou.aliyuncs.com/lxiangxiang/prometheus-operator:v0.78.1
+        skopeo copy --all docker://quay.io/jetstack/cert-manager-cainjector:v1.3.1 docker://registry.cn-zhangjiakou.aliyuncs.com/lxiangxiang/cert-manager-cainjector:v1.3.1
+        skopeo copy --all docker://quay.io/jetstack/cert-manager-controller:v1.3.1 docker://registry.cn-zhangjiakou.aliyuncs.com/lxiangxiang/cert-manager-controller:v1.3.1
+        skopeo copy --all docker://quay.io/jetstack/cert-manager-webhook:v1.3.1 docker://registry.cn-zhangjiakou.aliyuncs.com/lxiangxiang/cert-manager-webhook:v1.3.1
+        skopeo copy --all docker://docker.io/apache/skywalking-java-agent:9.3.0-java17 docker://registry.cn-zhangjiakou.aliyuncs.com/lxiangxiang/skywalking-java-agent:9.3.0-java17
+        skopeo copy --all docker://docker.io/apache/skywalking-oap-server:10.1.0 docker://registry.cn-zhangjiakou.aliyuncs.com/lxiangxiang/skywalking-oap-server:10.1.0
+        skopeo copy --all docker://docker.io/apache/skywalking-ui:10.1.0 docker://registry.cn-zhangjiakou.aliyuncs.com/lxiangxiang/skywalking-ui:10.1.0
+        skopeo copy --all docker://docker.io/apache/skywalking-banyandb:0.7.1 docker://registry.cn-zhangjiakou.aliyuncs.com/lxiangxiang/skywalking-banyandb:0.7.1
+        skopeo copy --all docker://docker.io/apache/skywalking-swck:v0.6.1 docker://registry.cn-zhangjiakou.aliyuncs.com/lxiangxiang/skywalking-swck:v0.6.1
+        skopeo copy --all docker://gcr.io/kubebuilder/kube-rbac-proxy:v0.8.0 docker://registry.cn-zhangjiakou.aliyuncs.com/lxiangxiang/kube-rbac-proxy:v0.8.0
