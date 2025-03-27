@@ -34,7 +34,7 @@ jobs:
     # 使用shell命令批量同步所需的镜像到dockerHub中
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
-        docker run quay.io/skopeo/stable:latest copy -a --preserve-digests --remove-signatures --dest-username ${{ secrets.DOCKER_USERNAME }} --dest-password ${{ secrets.DOCKER_PASSWORD }} docker://quay.io/prometheus-operator/prometheus-config-reloader:v0.79.1 docker://registry.cn-zhangjiakou.aliyuncs.com/lxiangxiang/prometheus-config-reloader:v0.79.1
+        docker run quay.io/skopeo/stable:latest copy -a --preserve-digests --remove-signatures --dest-username ${{ secrets.DOCKER_USERNAME }} --dest-password ${{ secrets.DOCKER_PASSWORD }} docker://registry.k8s.io/echoserver:1.10 docker://registry.cn-zhangjiakou.aliyuncs.com/lxiangxiang/echoserver:1.10
 
 
 
